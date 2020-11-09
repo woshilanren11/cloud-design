@@ -13,7 +13,7 @@ export default function DemoComponent() {
     <Style>
       <div>
         <Button type="normal">Normal</Button> &nbsp;&nbsp;
-        <Button type="primary">Prirmary</Button> &nbsp;&nbsp;
+        <Button type="primary">Primary</Button> &nbsp;&nbsp;
         <Button type="secondary">Secondary</Button>
         <br />
         <br />

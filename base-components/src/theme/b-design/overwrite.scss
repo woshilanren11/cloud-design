@@ -27,9 +27,31 @@ a:link {
 }
 
 // balloon tooltop相关
+.next-balloon-closable{
+  p{
+    margin: 0px;
+  }
+  padding: 8px 40px 8px 16px;
+  .next-balloon-close{
+    top: var(--balloon-size-close-margin-top, 8px);
+    font-size: var(--balloon-size-close, 16px);
+    // top: 7px;
+    // padding: 0px;
+  }
+  // var(--balloon-size-padding-top, 16px) var(--balloon-size-padding-closable-right, 40px) var(--balloon-size-padding-top, 16px) var(--balloon-size-padding-right, 16px);
+}
+.next-balloon-medium:not(.next-balloon-closable) {
+  padding: 8px 16px 8px 16px;
+  // padding: var(--balloon-size-padding-top, 16px) var(--balloon-size-padding-right, 16px) var(--balloon-size-padding-top, 16px) var(--balloon-size-padding-right, 16px);
+}
 .next-balloon-close:hover {
   background-color: transparent;
 }
+.next-balloon-tooltip-medium {
+  padding: 8px 16px;
+  // padding: var(--balloon-tooltip-size-padding-top, 8px) var(--balloon-tooltip-size-padding-right, 8px) var(--balloon-tooltip-size-padding-bottom, 8px) var(--balloon-tooltip-size-padding-left, 8px);
+}
+
 
 // dialog相关 这里可配
 .next-dialog-header{
@@ -204,3 +226,56 @@ a:link {
 	border-image: -moz-linear-gradient(to right,#888888,#888888)1 10 1;
   border-image: linear-gradient(to right,#888888,#888888)1 10 1; /* 标准的必须写在最后 */
 }
+
+// breadcrumb
+@media (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)
+{
+  .next-breadcrumb .next-breadcrumb-separator .next-icon{
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  .next-breadcrumb .next-breadcrumb-separator .next-icon:before {
+    color: #727272;
+  } 
+}
+
+// button
+.next-btn{
+  letter-spacing: 1.25px;
+}
+.next-btn-warning.next-btn-primary:focus{
+  box-shadow: 0 2px 4px 0 rgba(184,41,32,0.30);
+}
+.next-btn-warning.next-btn-normal:focus{
+  box-shadow: 0 2px 4px 0 rgba(184,41,32,0.30);
+}
+.next-btn.next-btn-text{
+  color: #1B58F4;
+  &:hover{
+    background: #ECF5FF;
+    border-radius: 4px;
+  }
+  &:focus{
+    background: #ECF5FF;
+    box-shadow: 0 2px 4px 0 rgba(27,88,244,0.10);
+    border-radius: 4px;
+  }
+}
+.next-btn-text.next-medium{
+  padding: 0 var(--btn-size-m-padding, 16px);
+  height: var(--btn-size-m-height, 32px);
+}
+.next-btn-text.next-large{
+  padding: 0 var(--btn-size-l-padding, 24px);
+  height: var(--btn-size-l-height, 36px);
+}
+.next-btn-text.next-small{
+  padding: 0 var(--btn-size-s-padding, 12px);
+  height: var(--btn-size-s-height, 28px);
+}
+
+// cascader
+// .next-cascader .next-menu-item.next-cascader-menu-item{
+//   padding: 0 var(--menu-padding-horizontal, 16px);
+// }
