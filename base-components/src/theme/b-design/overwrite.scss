@@ -79,7 +79,9 @@ a:link {
 .next-tag-closable.next-tag-level-normal[disabled], .disabled.next-tag-closable.next-tag-level-normal{
   background-color: #f3f3f3;
 }
-
+.next-tag:not([disabled]).next-tag.next-tag:hover .next-icon-close::before {
+  content: var(--icon-content-delete-filling);
+}
 // number-picker相关
 .next-number-picker-inline.next-medium .next-input-group{
   .next-btn{
