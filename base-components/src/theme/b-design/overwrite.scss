@@ -261,6 +261,9 @@ a:link {
     box-shadow: 0 2px 4px 0 rgba(27,88,244,0.10);
     border-radius: 4px;
   }
+  &.next-btn-secondary:focus{
+    box-shadow: 0 2px 4px 0 rgba(27,88,244,0.10)!important;
+  }
 }
 .next-btn-text.next-medium{
   padding: 0 var(--btn-size-m-padding, 16px);
@@ -274,8 +277,32 @@ a:link {
   padding: 0 var(--btn-size-s-padding, 12px);
   height: var(--btn-size-s-height, 28px);
 }
-
+// calendar相关
+.next-calendar:not(.next-calendar-fullscreen){
+  .next-calendar-cell.next-calendar-cell-current{
+    position: relative;
+    .next-calendar-date::after{
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      width: 4px;
+      height: 4px;
+      background: #1B58F4;
+      border-radius: 2px;
+      left: 50%;
+      margin-left: -2px;
+    }
+  }
+  .next-calendar-cell.next-calendar-cell-current.next-selected{
+    .next-calendar-date::after{
+      background: #ffffff;
+    }
+  }
+}
 // cascader
-// .next-cascader .next-menu-item.next-cascader-menu-item{
-//   padding: 0 var(--menu-padding-horizontal, 16px);
-// }
+.next-menu-item.next-cascader-menu-item{
+  .next-cascader-menu-icon-right.next-cascader-menu-icon-expand::before {
+    content: "►";
+    color: #727272;
+  }
+}
