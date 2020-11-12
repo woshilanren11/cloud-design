@@ -306,3 +306,17 @@ a:link {
     color: #727272;
   }
 }
+// 去除滚动条
+.next-cascader-select-dropdown{
+  border: none;
+}
+.next-cascader-menu-wrapper{
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+}
+.next-cascader-menu-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}

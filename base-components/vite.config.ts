@@ -9,7 +9,6 @@ import { compileCss } from 'vite/dist/node/utils/cssUtils'
 const pagesDir = path.join(__dirname, 'pages')
 
 module.exports = {
-  port: 8080,
   root: __dirname,
   jsx: 'react',
   plugins: [vpr, mdx(), pages({ pagesDir, findPages, useHashRouter: true })],

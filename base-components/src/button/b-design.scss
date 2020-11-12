@@ -2,7 +2,7 @@
   background-image: var(--btn-pure-normal-bg-image);
   background-color: transparent;
 }
-.next-btn.next-btn-noraml:hover:not(.next-btn-text):not(.next-btn-warning):not(.next-pagination-item):not(.next-search-btn), .next-btn.next-btn-normal.hover:not(.next-btn-text):not(.next-btn-warning):not(.next-pagination-item):not(.next-search-btn) {
+.next-btn.next-btn-normal:hover:not(.next-btn-text):not(.next-btn-warning):not(.next-pagination-item):not(.next-search-btn), .next-btn.next-btn-normal.hover:not(.next-btn-text):not(.next-btn-warning):not(.next-pagination-item):not(.next-search-btn) {
   background-image: var(--btn-pure-normal-bg-image);
   box-shadow: 0 4px 8px 0 rgba(27,89,244,0.30);
   background-color: transparent;
